@@ -6,6 +6,8 @@ import json
 import pandas as pd
 import psycopg2.extras
 
+from config import user_db, passwd_db
+
 
 os.chdir('L:\\architecture\\__status_codes_customer_codes\\_development_configs')
 
@@ -42,8 +44,8 @@ from
 params = {
     'host': 'revpgdb01.revintel.net',
     'database': 'tpliq_tracker_db',
-    'user': 'james_niu_u',
-    'password': 'Cw18745.'
+    'user': 'user_db',
+    'password': 'passwd_db'
 }
 con = psycopg2.connect(**params)
 cur = con.cursor(cursor_factory = psycopg2.extras.DictCursor)
