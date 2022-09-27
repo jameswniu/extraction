@@ -15,7 +15,7 @@ Fix State given address check sum of charges verify facility name given NPI and 
 
 Get City given address in JSON object.py
 
-Get zip from usps API.py
+Get zip from USPS API.py
 
 Use API to fill in ICD code description and update database.py
 
