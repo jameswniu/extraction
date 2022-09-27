@@ -14,7 +14,7 @@ from utils.db_conn import DBHandler
 # To insert DX code descriptions for 837P records
 #----
 
-conn= DBHandler().get_session()
+conn = DBHandler().get_session()
 cur = conn.cursor()
 
 
@@ -40,11 +40,11 @@ no_dx_info = []
 
 count = 0
 records = {}
-cur.execute( sql_select )
+cur.execute(sql_select)
 
 for line in cur:
     records[line.pm_sk] = line.codes.replace('.', '').replace(' ', '')
-    count +=1
+    count += 1
 
 updated = 0
 if count > 0 :
@@ -54,7 +54,7 @@ if count > 0 :
         x = cur.fetchone()
         #print(k, codes, x) # keep for debug
         if x is None or x[0] is None: # if no ICD description
-            no_dx_info.append( "{}: {}".format(k, codes))
+            no_dx_info.append("{}: {}".format(k, codes))
             continue
         details = x[0].replace("'", "")
         details = details.upper()
@@ -68,9 +68,9 @@ if count > 0 :
 
 print(' updated {} records dx_code_desc !'.format(updated), file=sys.stderr)
 
+
 if no_dx_info:
     msg = '\r\n'.join(no_dx_info)
     print(msg, file=sys.stderr)
     send_mail("New ICD Code", msg, 'yi.yan@medlytix.com')
-    sys.exit(1)
 
