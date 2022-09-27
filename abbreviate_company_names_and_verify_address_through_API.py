@@ -245,6 +245,8 @@ def trim_name(name, thres=30):
                 pass
 
             return f'[{new_name_1}]'
+
+
 def validate_addr(addr1, city, state, zip=''):
     try:
         global d0, d1
@@ -864,9 +866,9 @@ def validate_addr(addr1, city, state, zip=''):
         return fulladdr
 
 
-########################################################################################################################
+#----
 # trim name w dict
-########################################################################################################################
+#----
 os.chdir(r'L:\Billing_Processing\logs')
 
 fw = open('template.txt', 'w')
@@ -896,9 +898,9 @@ def trim_name_billing():
             print("""{} (changed to {})""".format(line, changed_name), file=fw)
 
 
-########################################################################################################################
+#----
 # get zip w API
-########################################################################################################################
+#----
 def get_zip_billing():
     try:
         global d0, d1
@@ -952,9 +954,9 @@ def get_zip_billing():
         print(fr.read())
 
 
-########################################################################################################################
-# transport changes to server
-########################################################################################################################
+#----
+# transport changes to linux server
+#----
 def transfer_linux(file, linux_loc):
     try:
         ssh = SSHClient()
@@ -981,3 +983,4 @@ if __name__ == '__main__':
         transfer_linux('template.txt', '/home/james.niu@revintel.net/production/jsondump')
     else:
         print('file not created...')
+
