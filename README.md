@@ -15,9 +15,9 @@ Fix State given address check sum of charges verify facility name given NPI and 
 
 Get City given address in JSON object.py
 
-Display only relevant fields in JSON.py
+Extract transform and format data from customer raw input.py
 
-Extract and format data from customer raw input.py
+Display only relevant fields in JSON.py
 
 Use data warehouse to fill in missing ICD code descriptions and update records stored.py
 
