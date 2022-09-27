@@ -425,7 +425,7 @@ def get_proc(record, idx):
                 'ACCOUNT_NUMBER':      'patient_account',
                 }
 
-    prefix = 'LX{:0>3}_'.format(idx)
+    prefix = 'LX{:0>3}_'.format(idx)    # padding up to three zeros from the left
     ret = {}
 
     for l, r in proc_map.items():
