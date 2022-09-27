@@ -13,7 +13,7 @@ Abbreviate company names and verify address through API.py
 
 Fix State given address check sum of charges verify facility name given NPI and update database.py
 
-Get city given address in JSON object.py
+Get City given address in JSON object.py
 
 Get zip from usps API.py
 
