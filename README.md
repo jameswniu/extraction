@@ -21,7 +21,7 @@ Extract and format data from customer raw input.py
 
 Use data warehouse to fill in missing ICD code descriptions and update records stored.py
 
-Generate CSV from database and convert Linux win line endings.py
-
 Get zip from USPS API.py
+
+Generate CSV from database and convert Linux to Windows line endings.py
 
