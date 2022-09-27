@@ -11,7 +11,7 @@ Select and analyze only ASC X12 claim response codes requiring action.sql
 
 Abbreviate company names and verify address through API.py
 
-Database fix state given address check numerical sums verify facility name given npi and update database.py
+Fix State given address check sum of charges verify facility name given npi and update database.py
 
 Get city given address in JSON object.py
 
