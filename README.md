@@ -19,7 +19,7 @@ Display only relevant fields in JSON.py
 
 Extract and format data from customer raw input.py
 
-Use other table to fill in ICD code descriptions and update database for records.py
+Use data warehouse to fill in missing ICD code descriptions and update records stored.py
 
 Generate CSV from database and convert Linux win line endings.py
 
