@@ -17,8 +17,6 @@ Get City given address in JSON object.py
 
 Extract transform and format data from customer raw input.py
 
-Create scatterplot linear regression heat map to analyze political alignment and mask mandates.ipynb
-
 Display only relevant fields in JSON.py
 
 Use data warehouse to fill in missing ICD code descriptions and update records stored.py
@@ -26,4 +24,6 @@ Use data warehouse to fill in missing ICD code descriptions and update records s
 Get zip from USPS API.py
 
 Generate CSV from database and convert Linux to Windows line endings.py
+
+Geocode locations with API and create scatterplot linear regression heat map to analyze political alignment and mask mandates.ipynb
 
